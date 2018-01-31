@@ -8,4 +8,7 @@ Expirment of snow images
 $ python3 crawl.py
 $ python3 download.py
 $ ./index.sh
+$ python3 preprocess.py
+$ python3 split.py
+$ ./update.sh
 ```
