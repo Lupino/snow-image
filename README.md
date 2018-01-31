@@ -7,4 +7,5 @@ Expirment of snow images
 ```bash
 $ python3 crawl.py
 $ python3 download.py
+$ ./index.sh
 ```
