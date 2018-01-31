@@ -11,9 +11,6 @@ def image_url():
                     'img_url': 'https:' + dt['equalh_url']
                 }
 
-
-
-
 headers = {
     'user-agent': 'Baiduspider'
 }
