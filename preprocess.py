@@ -34,7 +34,7 @@ def dashrepl(m):
         fields.append('<field name="{}">https:{}</field>'.format('imgurl', img['imgurl']))
 
     if k == 'title':
-        fields.append('<field name="{}">{}</field>'.format(k, img['title']))
+        fields.append('<field name="{}">{}</field>'.format(k, img['title'].replace('&', '')))
 
     return '\n'.join(fields)
 
