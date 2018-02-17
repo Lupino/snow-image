@@ -15,6 +15,7 @@ cmake ../caffe2 -DBLAS=OpenBLAS \
          -DUSE_MPI=OFF \
          -DUSE_CUDA=OFF \
          -DUSE_NNPACK=OFF \
+         -DUSE_LEVELDB=OFF \
          `python3 ../caffe2/scripts/get_python_cmake_flags.py`
 
 make
