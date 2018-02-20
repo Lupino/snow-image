@@ -22,12 +22,12 @@ mkdir -p ${BUILD_PATH}
 cd ${BUILD_PATH}
 
 cmake ${CAFFE_SRC} -DBLAS=OpenBLAS \
-         -DUSE_OPENCV=off \
+         -DUSE_OPENCV=ON \
          -DPYTHON_EXECUTABLE=/usr/local/bin/python3 \
          -DUSE_MPI=OFF \
          -DUSE_CUDA=OFF \
          -DUSE_NNPACK=OFF \
-         -DUSE_LEVELDB=OFF \
+         -DUSE_LEVELDB=ON \
          `python3 ${CAFFE_SRC}/scripts/get_python_cmake_flags.py`
 
 make
